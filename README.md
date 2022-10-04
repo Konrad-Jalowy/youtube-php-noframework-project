@@ -47,7 +47,7 @@ gd library rather than saved as they come... Another thing to watch out </br>
 that maybe there is a way to copy the contents of the audio file like that. I mean I dont know what audio file can cause in terms of security,
 people say its safe, no executable code, can do buffer overflow like any file but thats it. And of course I know, in linux shell you can copy any file,
 some people might not know, but its not only for text files, you can copy images, music as well i think, but using shell exec is a very bad thing.
-Plus, when I copy image I do not copy/pase file, I record the contents and output them in another image. Any malicious stuff or exif data
+Plus, when I copy image I do not copy/paste file, I record the contents and output them in another image. Any malicious stuff or exif data
 (the way I see it, but something so record those data and store them somwhere is also worth introducing) is not copied.
 So equivalent of this in audio files would be playing and recording them. So what im looking for is stupid, also invloves running the file anyways,
 probably takes a lot of memory (thats why we destroy image after the job is done in gd... if we close db conncetions in those more advanced projects is
